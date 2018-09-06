@@ -49,7 +49,6 @@ abstract class AbstractFormContainer extends AbstractFormComponent implements Co
     public function createComponent($namespace, $type, $name, $label = null)
     {
         $component = parent::createComponent($namespace, $type, $name, $label);
-        $this->add($component);
         return $component;
     }
 
